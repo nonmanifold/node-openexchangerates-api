@@ -154,16 +154,16 @@ __Arguments__
 
 This Error class handles [error responses](https://openexchangerates.org/documentation#errors).
 
-### string errno
+#### string errno
 
 Equals to `errResponse.message`. Error code.
 
-### string status
-### string statusCode
+#### string status
+#### string statusCode
 
 Equals to `errResponse.status`. HTTP status code of call.
 
-### string message
+#### string message
 
 Equals to `errResponse.description`.
 
