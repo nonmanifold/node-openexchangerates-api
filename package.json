@@ -1,0 +1,33 @@
+{
+  "name": "openexchangerates-api",
+  "description": "Yet another Node.js module to work with Open Exchange Rates",
+  "keywords": [
+    "openexchangerates",
+    "open",
+    "exchange",
+    "rates",
+    "currency",
+    "api",
+    "finance",
+    "conversion",
+    "money"
+  ],
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7eggs/node-openexchangerates-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/7eggs/node-openexchangerates-api/issues"
+  },
+  "dependencies": {
+    "custom-error-generator": "^7.0.0",
+    "debug": "^2.1.0",
+    "request": "^2.51.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Alexander Makarenko <estliberitas@gmail.com>",
+  "license": "MIT"
+}
