@@ -26,8 +26,17 @@
     "debug": "^2.1.0",
     "request": "^2.51.0"
   },
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "jasmine-node": "latest",
+    "deep-equal": "latest",
+    "istanbul": "latest",
+    "jshint": "latest",
+    "coveralls": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node lib",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/jasmine-node --report lcovonly -- lib && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
   "author": "Alexander Makarenko <estliberitas@gmail.com>",
   "license": "MIT"
 }
