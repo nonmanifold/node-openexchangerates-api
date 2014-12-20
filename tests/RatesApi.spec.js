@@ -54,7 +54,7 @@ describe("RatesApi", function () {
             expect(function () {
                 client.latest({base: 'USD'}, function handleLatest(err, data) {
                     latestRate = data;
-                    isResolved=true;
+                    isResolved = true;
                 });
             }).not.toThrow();
         });
@@ -79,7 +79,7 @@ describe("RatesApi", function () {
             expect(function () {
                 client.historical(new Date(2014, 1, 21), function handleHistorical(err, data) {
                     historical = data;
-                    isResolved=true;
+                    isResolved = true;
                 });
             }).not.toThrow();
         });
@@ -108,7 +108,7 @@ describe("RatesApi", function () {
             expect(function () {
                 client.timeSeries(start, end, options, function handleTimeSeries(err, data) {
                     series = data;
-                    isResolved=true;
+                    isResolved = true;
                 });
             }).not.toThrow();
         });
@@ -135,7 +135,7 @@ describe("RatesApi", function () {
             expect(function () {
                 client.convert(100, 'EUR', 'USD', function handleResult(err, data) {
                     converted = data;
-                    isResolved=true;
+                    isResolved = true;
                 });
             }).not.toThrow();
         });

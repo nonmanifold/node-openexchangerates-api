@@ -35,9 +35,9 @@
     "coveralls": "latest"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jasmine-node lib",
-    "autotest": "./node_modules/.bin/jasmine-node lib --autotest",
-    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/jasmine-node --report lcovonly -- lib && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "./node_modules/.bin/jasmine-node tests",
+    "autotest": "./node_modules/.bin/jasmine-node tests --autotest",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/jasmine-node --report lcovonly -- tests && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Alexander Makarenko <estliberitas@gmail.com>",
   "license": "MIT"
